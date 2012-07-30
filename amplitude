@@ -1,0 +1,11 @@
+
+Pitch 
+
+{SinOsc.ar(Amplitude.ar( SoundIn.ar(0)),1,1)}.play
+
+
+
+
+ 
+Pif 
+  
