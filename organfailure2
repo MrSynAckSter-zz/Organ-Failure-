@@ -11,7 +11,7 @@ SynthDef(\sine, { |amp = 0.005, freq = 0, lfofreq = 10|
 /////////////////
 SynthDef("pitchFollow1",{ 
 var in, amp, freq, hasFreq, out; 
-in = Mix.new(SoundIn.ar([0,1])); 
+in = Mix.new(SoundIn.ar([0,0])); 
 amp = Amplitude.kr(in, 0.05, 0.05) * 0.45 ; 
 # freq, hasFreq = Pitch.kr(in, ampThreshold: 0.02, median: 7); 
 //freq = Lag.kr(freq.cpsmidi.round(1).midicps, 0.05); 
@@ -41,4 +41,4 @@ a = {
 
 
 
-{SinOsc.ar(1,0,1)}.play         
+{SinOsc.ar(1,0,1)}.play           
